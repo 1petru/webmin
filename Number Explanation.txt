@@ -1,0 +1,15 @@
+3 - Regression
+LinearRegression
+R2_MSE_MAEE
+DecisionTreeRegression
+KNeighborsRegression
+
+4 - Clustering
+KMeans
+DBScan
+
+5 - Neural Networks
+Tensorflow
+pytorch
+
+6 - Recurring Neural Networks
