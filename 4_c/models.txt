@@ -1,0 +1,27 @@
+1. KMeans - ex1
+Alegi numărul de clustere k (ex: k=3 în exemplul tău).
+Inițializează aleatoriu k centre (centroizi).
+Pentru fiecare punct de date:
+Atribuie-l centrului cel mai apropiat (pe baza distanței Euclidiene).
+Recalculează centroizii:
+Fiecare nou centru devine media punctelor din clusterul său.
+Repetă pașii 3–4 până când:
+Punctele nu-și mai schimbă clusterul (convergență) sau
+Se atinge un număr maxim de iterații.
+
+2. DBSCAN (Density-Based Spatial Clustering of Applications with Noise) - ex2
+Grupeaza punctele dense împreună (formând clustere).
+Identifică punctele rare/singulare (outliers sau „noise”) și le marchează cu eticheta -1.
+🔧 Cum funcționează:
+Primește doi parametri:
+eps: raza unui cerc în jurul fiecărui punct (vecinătatea).
+min_samples: numărul minim de puncte necesare într-o vecinătate pentru ca acel punct să fie considerat „nucleu” de cluster.
+Pentru fiecare punct:
+Dacă are cel puțin min_samples în raza eps → e punct de nucleu.
+Punctele apropiate de un nucleu devin membri ai aceluiași cluster.
+Dacă un punct nu e într-o astfel de vecinătate → e considerat outlier (-1).
+
+🧠 Ce înseamnă în practică:
+Detectează forme de clustere neregulate, nu doar sferice ca la KMeans.
+Nu necesită să specifici numărul de clustere k, îl află singur.
+Poate separa aglomerări și elimina zgomotul din date (outliers).

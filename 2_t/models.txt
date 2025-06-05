@@ -1,0 +1,4 @@
+1. Naive Bayes Gaussian (GaussianNB) - sol1
+Potrivit pentru date numerice continue
+Consideră că fiecare caracteristică este independentă de celelalte (ipoteză „naivă”)
+Estimează probabilități din distribuții normale (mean și std dev per clasă)

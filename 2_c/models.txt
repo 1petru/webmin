@@ -1,0 +1,27 @@
+1. Logistic Regression - ex1
+Este un model de clasificare binară care estimează probabilitatea ca un exemplu să aparțină clasei pozitive (survived = 1).
+
+
+
+2. SVM - ex3
+Cum funcționează SVM (cu kernel liniar):
+Găsește o linie de separare (plan de decizie) care separă cât mai bine clasele (purchased = 1 vs. 0).
+Cu kernelul linear, modelul învață o funcție de forma:
+Dacă f(x) > 0 → clasa 1 (va cumpăra)
+Dacă f(x) < 0 → clasa 0 (nu cumpără)
+
+
+
+3. Decision Tree - ex4
+Împarte datele pas cu pas pe baza valorilor caracteristicilor (ex: credit_score < 610) pentru a separa cât mai clar clasele (loan_approved = 0 vs. 1).
+Alege tăieturile care maximizează informația câștigată (ex: folosind Gini impurity).
+Este ușor de interpretat și vizualizat, de aceea este preferat în aplicații explicabile (ex: credit scoring, medicină etc.).
+
+
+
+4. Ce sunt L1 și L2? - ex5
+Regularizarea în machine learning
+Regularizarea este o tehnică folosită ca să:
+eviți overfitting (modelul învață prea mult din datele de antrenament și merge prost pe date noi)
+penalizezi modele „complicate” (cu coeficienți mari)
+Se face adăugând o penalizare la funcția de cost a modelului, în funcție de mărimea coeficienților.

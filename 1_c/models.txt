@@ -1,0 +1,43 @@
+1. NaiveBytes - ex1
+Modelul Multinomial Naive Bayes este un algoritm de clasificare potrivit pentru date textuale, bazat pe probabilități. În acest context:
+
+Fiecare email este reprezentat ca un vector cu frecvențele fiecărui cuvânt.
+
+Modelul învață distribuția cuvintelor în funcție de clasă (spam/ham).
+
+La predicție, pentru un nou email, calculează probabilitatea ca acesta să fie spam sau ham pe baza cuvintelor conținute, și alege clasa cu probabilitatea cea mai mare.
+
+
+
+2. MinMaxScaler - ex 7
+Transformă toate valorile astfel încât să fie în intervalul [0, 1].
+Avantaj: bun pentru modele care presupun o scală fixă (ex: rețele neuronale).
+Dezavantaj: sensibil la outlieri (valori extreme pot distorsiona rezultatul).
+
+
+
+3. StandardScaler - ex 7
+Transformă valorile astfel încât:
+media fiecărei coloane = 0
+deviația standard = 1
+Avantaj: util pentru algoritmi care presupun distribuții normale (ex: regresie liniară, SVM).
+Dezavantaj: nu limitează valorile într-un interval anume (pot fi negative sau >1).
+
+
+
+4. Undersampling – RandomUnderSampler - ex10
+Scop: elimină aleator exemple din clasa majoritară pentru a ajunge la un raport specificat.
+În acest caz: sampling_strategy=0.5 înseamnă că va păstra un raport de 1 fraudă la 2 legitime.
+Practic, reduce datele legitime de la 17 → 6, pentru a avea 6 non-fraudă vs. 3 fraudă.
+➡️ Avantaj: simplu, rapid, și eficient când ai multe date.
+➡️ Dezavantaj: poți pierde informații utile prin eliminare.
+
+
+
+5. Oversampling – SMOTE (Synthetic Minority Over-sampling Technique)
+Scop: creează exemple sintetice pentru clasa minoritară, pe baza vecinilor apropiați.
+În acest caz: sampling_strategy=0.8 → clasa minoritară va ajunge să fie 80% din dimensiunea clasei majore.
+Cu k_neighbors=1, fiecare nou punct este generat folosind doar un vecin apropiat (bun pentru seturi mici).
+➡️ Avantaj: nu pierzi date; îmbunătățește performanța clasificatorilor.
+➡️ Dezavantaj: poate introduce puncte sintetice irelevante dacă datele sunt zgomotoase sau foarte rare.
+

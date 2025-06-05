@@ -1,0 +1,7 @@
+1. Logistic Regression - sol5
+Este un model de clasificare binară care estimează probabilitatea ca un exemplu să aparțină clasei pozitive (survived = 1).
+
+În fundal, aplică o funcție logistică (sigmoid) pe o combinație liniară a caracteristicilor (age, fare, etc.).
+
+Dacă probabilitatea > 0.5 → clasifică drept 1 (supraviețuit), altfel 0.
+

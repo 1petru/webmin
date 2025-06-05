@@ -1,0 +1,12 @@
+1. Linear Regression - ex1
+Modelul învață o formulă matematică care estimează prețul la ceva pe baza caracteristicilor sale / a celorlalte valori.
+
+2. DecisionTreeRegressor - ex4
+Face predicții numerice – în cazul tău, prețul unei case – pe baza unor caracteristici (features)
+Este un fel de Linear Regression neliniar - mai indepth
+
+3. KNeighborsRegressor - ex9
+Modelul nu „învață” o funcție explicită ca în regresia liniară. În schimb:
+Caută cele mai apropiate puncte (vecini) în setul de antrenament.
+Calculează media valorilor țintă (aici, prețuri) ale acelor vecini.
+Returnează această medie ca predicție.
